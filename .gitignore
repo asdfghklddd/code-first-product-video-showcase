@@ -1,0 +1,9 @@
+node_modules/
+build/
+dist/
+out/
+.env*
+*.mp4
+*.mov
+*.wav
+*.m4a

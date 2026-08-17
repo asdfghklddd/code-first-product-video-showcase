@@ -1,0 +1,30 @@
+{
+  "name": "code-first-product-video-showcase",
+  "version": "1.0.0",
+  "description": "A code-first Remotion product-film showcase with deterministic motion and synthetic UI content.",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "remotion studio",
+    "build": "remotion bundle",
+    "lint": "eslint src && tsc --noEmit",
+    "test": "node --test tests/*.test.mjs",
+    "render:poster": "remotion still AnchorPromo-Poster out/poster.png --frame=75",
+    "render:video": "remotion render AnchorPromo out/anchor-promo.mp4"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.506",
+    "@remotion/transitions": "4.0.506",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.506"
+  },
+  "devDependencies": {
+    "@remotion/eslint-config-flat": "4.0.506",
+    "@types/react": "19.2.7",
+    "@types/web": "0.0.166",
+    "eslint": "9.39.5",
+    "typescript": "5.9.3"
+  },
+  "sideEffects": ["*.css"]
+}
