@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@types/three": "^0.180.0",
+    "three": "^0.180.0"
+  },
+  "name": "anchor-value-summary-studies",
+  "private": true,
+  "version": "1.0.0"
+}

@@ -8,12 +8,14 @@ import { SceneFrame } from "../components/SceneFrame";
 
 type ReturnSceneProps = {
   readonly recordingSrc?: string;
+  readonly macRecordingSrc?: string;
   readonly productName: string;
   readonly tagline: string;
 };
 
 export const ReturnScene: React.FC<ReturnSceneProps> = ({
   recordingSrc,
+  macRecordingSrc,
   productName,
   tagline,
 }) => {
@@ -63,7 +65,7 @@ export const ReturnScene: React.FC<ReturnSceneProps> = ({
           zIndex: 3,
         }}
       >
-        回来时，你不用重建上下文，直接回到正确的决定。
+        变化、进展和下一步，回来时一眼找回。
       </div>
 
       <div
@@ -98,8 +100,9 @@ export const ReturnScene: React.FC<ReturnSceneProps> = ({
         height={430}
         delay={40}
         rotate={-3}
+        capturedChrome={Boolean(macRecordingSrc)}
       >
-        <AnchorDashboardMock focus="return" recordingSrc={recordingSrc} />
+        <AnchorDashboardMock focus="return" recordingSrc={macRecordingSrc ?? recordingSrc} />
       </DeviceFrame>
       <DeviceFrame
         kind="iphone"

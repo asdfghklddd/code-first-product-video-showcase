@@ -9,19 +9,31 @@ import {
 } from "./data/storyboard";
 import { AnchorScene } from "./scenes/AnchorScene";
 import { DecisionScene } from "./scenes/DecisionScene";
-import { HeroCardScene } from "./scenes/HeroCardScene";
+import { HeroCardScene, HeroCapture } from "./scenes/HeroCardScene";
 import { ReturnScene } from "./scenes/ReturnScene";
 
 export type AnchorPromoProps = {
   readonly productName: string;
   readonly tagline: string;
   readonly recordingSrc?: string;
+  readonly anchorRecordingSrc?: string;
+  readonly decisionRecordingSrc?: string;
+  readonly returnPhoneRecordingSrc?: string;
+  readonly returnMacRecordingSrc?: string;
+  readonly heroCapture?: HeroCapture;
+  readonly decisionCalloutSrc?: string;
 };
 
 export const AnchorPromo: React.FC<AnchorPromoProps> = ({
   productName,
   tagline,
   recordingSrc,
+  anchorRecordingSrc,
+  decisionRecordingSrc,
+  returnPhoneRecordingSrc,
+  returnMacRecordingSrc,
+  heroCapture,
+  decisionCalloutSrc,
 }) => {
   return (
     <AbsoluteFill>
@@ -30,7 +42,7 @@ export const AnchorPromo: React.FC<AnchorPromoProps> = ({
           durationInFrames={anchorStoryboard[0].durationInFrames}
           name="ColdOpen"
         >
-          <HeroCardScene />
+          <HeroCardScene capture={heroCapture} />
         </TransitionSeries.Sequence>
         <TransitionSeries.Transition
           timing={linearTiming({ durationInFrames: TRANSITION_FRAMES })}
@@ -39,7 +51,7 @@ export const AnchorPromo: React.FC<AnchorPromoProps> = ({
           durationInFrames={anchorStoryboard[1].durationInFrames}
           name="Anchor"
         >
-          <AnchorScene recordingSrc={recordingSrc} />
+          <AnchorScene recordingSrc={anchorRecordingSrc ?? recordingSrc} />
         </TransitionSeries.Sequence>
         <TransitionSeries.Transition
           timing={linearTiming({ durationInFrames: TRANSITION_FRAMES })}
@@ -48,7 +60,7 @@ export const AnchorPromo: React.FC<AnchorPromoProps> = ({
           durationInFrames={anchorStoryboard[2].durationInFrames}
           name="Decision"
         >
-          <DecisionScene recordingSrc={recordingSrc} />
+          <DecisionScene recordingSrc={decisionRecordingSrc ?? recordingSrc} capturedCalloutSrc={decisionCalloutSrc} />
         </TransitionSeries.Sequence>
         <TransitionSeries.Transition
           timing={linearTiming({ durationInFrames: TRANSITION_FRAMES })}
@@ -58,7 +70,8 @@ export const AnchorPromo: React.FC<AnchorPromoProps> = ({
           name="Return"
         >
           <ReturnScene
-            recordingSrc={recordingSrc}
+            recordingSrc={returnPhoneRecordingSrc ?? recordingSrc}
+            macRecordingSrc={returnMacRecordingSrc ?? recordingSrc}
             productName={productName}
             tagline={tagline}
           />

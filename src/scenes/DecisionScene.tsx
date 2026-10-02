@@ -1,4 +1,4 @@
-import { Easing, interpolate, useCurrentFrame } from "remotion";
+import { Easing, Img, interpolate, staticFile, useCurrentFrame } from "remotion";
 import { anchorTheme } from "../config/anchorTheme";
 import { AnchorDashboardMock } from "../components/AnchorDashboardMock";
 import { DeviceFrame } from "../components/DeviceFrame";
@@ -7,10 +7,12 @@ import { SceneFrame } from "../components/SceneFrame";
 
 type DecisionSceneProps = {
   readonly recordingSrc?: string;
+  readonly capturedCalloutSrc?: string;
 };
 
 export const DecisionScene: React.FC<DecisionSceneProps> = ({
   recordingSrc,
+  capturedCalloutSrc,
 }) => {
   const frame = useCurrentFrame();
   const spotlightOpacity = interpolate(
@@ -47,7 +49,9 @@ export const DecisionScene: React.FC<DecisionSceneProps> = ({
         </div>
         <div style={{ marginTop: 26 }}>
           <KineticText color={anchorTheme.colors.ink} size={84} delay={8}>
-            只把真正重要的决定，交给你。
+            把重要的决定，
+            <br />
+            交给你。
           </KineticText>
         </div>
         <div
@@ -63,7 +67,7 @@ export const DecisionScene: React.FC<DecisionSceneProps> = ({
             }),
           }}
         >
-          不是更多提醒，而是更少、更清楚的入口。
+          先看清正在发生什么，再进入需要你判断的地方。
         </div>
         <div
           style={{
@@ -89,7 +93,7 @@ export const DecisionScene: React.FC<DecisionSceneProps> = ({
               boxShadow: `0 0 0 8px ${anchorTheme.colors.decision}25`,
             }}
           />
-          需要你判断的，只有一件事。
+          让每一次判断，都有上下文。
         </div>
       </div>
 
@@ -142,6 +146,7 @@ export const DecisionScene: React.FC<DecisionSceneProps> = ({
           zIndex: 5,
         }}
       >
+        {capturedCalloutSrc ? <Img src={staticFile(capturedCalloutSrc)} style={{ width: "100%", display: "block" }} /> : <>
         <div
           style={{
             color: "#9A7415",
@@ -160,7 +165,7 @@ export const DecisionScene: React.FC<DecisionSceneProps> = ({
             fontWeight: 700,
           }}
         >
-          Choose the final direction
+          先上线哪版注册页？
         </div>
         <div style={{ display: "flex", gap: 8, marginTop: 15 }}>
           <div
@@ -180,6 +185,7 @@ export const DecisionScene: React.FC<DecisionSceneProps> = ({
             }}
           />
         </div>
+        </>}
       </div>
     </SceneFrame>
   );

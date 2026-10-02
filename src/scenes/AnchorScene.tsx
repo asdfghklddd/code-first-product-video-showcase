@@ -55,7 +55,7 @@ export const AnchorScene: React.FC<AnchorSceneProps> = ({ recordingSrc }) => {
         </div>
         <div style={{ marginTop: 28 }}>
           <KineticText size={96} delay={10}>
-            把上下文，
+            把每项工作，
             <br />
             稳稳接住。
           </KineticText>
@@ -73,7 +73,7 @@ export const AnchorScene: React.FC<AnchorSceneProps> = ({ recordingSrc }) => {
             }),
           }}
         >
-          Anchor 安可，把目标、进程和人类判断，固定在一起。
+          目标、进展和需要你的判断，都有清晰的位置。
         </div>
         <div
           style={{
@@ -92,7 +92,7 @@ export const AnchorScene: React.FC<AnchorSceneProps> = ({ recordingSrc }) => {
               letterSpacing: "-0.02em",
             }}
           >
-            One place to come back to.
+            一眼找到，接着继续。
           </div>
         </div>
       </div>

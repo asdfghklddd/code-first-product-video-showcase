@@ -10,6 +10,7 @@ type DeviceFrameProps = {
   readonly height: number;
   readonly delay?: number;
   readonly rotate?: number;
+  readonly capturedChrome?: boolean;
 };
 
 export const DeviceFrame: React.FC<DeviceFrameProps> = ({
@@ -21,6 +22,7 @@ export const DeviceFrame: React.FC<DeviceFrameProps> = ({
   height,
   delay = 0,
   rotate = 0,
+  capturedChrome = false,
 }) => {
   const frame = useCurrentFrame();
   const localFrame = Math.max(0, frame - delay);
@@ -91,7 +93,7 @@ export const DeviceFrame: React.FC<DeviceFrameProps> = ({
           backgroundColor: anchorTheme.colors.paper,
         }}
       >
-        {kind === "mac" && (
+        {kind === "mac" && !capturedChrome && (
           <div
             style={{
               height: 32,

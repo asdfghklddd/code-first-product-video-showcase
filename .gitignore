@@ -7,3 +7,21 @@ out/
 *.mov
 *.wav
 *.m4a
+
+# Owner-provided local production media. Keep the public showcase boundary.
+public/local-assets/
+build-current/
+build-motion/
+build-hero/
+
+# 本地生产配置、三维工程与帧缓存不进入公开源码。
+*.blend
+*.blend1
+*.zip
+__pycache__/
+*.pyc
+local-config/
+original-ending-info.json
+**/Frames/
+**/OceanFrames/
+**/EndingFrames/

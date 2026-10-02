@@ -8,6 +8,7 @@ const walk = async (directory) => {
   const entries = await readdir(directory, { withFileTypes: true });
   const files = [];
   for (const entry of entries) {
+    if (["node_modules", "__pycache__"].includes(entry.name)) continue;
     const path = join(directory, entry.name);
     if (entry.isDirectory()) files.push(...(await walk(path)));
     else files.push(path);
@@ -21,6 +22,16 @@ test("public source has no private-platform or machine-path references", async (
   for (const file of files) {
     const content = await readFile(file, "utf8");
     for (const pattern of forbidden) assert.equal(pattern.test(content), false, `${pattern} found in ${file}`);
+  }
+});
+
+test("production scripts and studies contain no personal machine paths", async () => {
+  for (const directory of ["scripts", "studies", "docs", "examples"]) {
+    const files = await walk(fileURLToPath(new URL(`../${directory}`, import.meta.url)));
+    for (const file of files.filter((path) => /\.(mjs|tsx?|py|md|json)$/.test(path))) {
+      const content = await readFile(file, "utf8");
+      assert.equal(/\/Users\/[^\s/]+\/|C:\\Users\\|wxid_/i.test(content), false, `Personal path found in ${file}`);
+    }
   }
 });
 

@@ -1,4 +1,4 @@
-import { AbsoluteFill, Easing, interpolate, useCurrentFrame } from "remotion";
+import { AbsoluteFill, Easing, Img, interpolate, staticFile, useCurrentFrame } from "remotion";
 import { anchorTheme } from "../config/anchorTheme";
 import { AnchorGlyph } from "../components/AnchorGlyph";
 import { PageCam, CamKey } from "../components/PageCam";
@@ -21,7 +21,7 @@ const pageCards = [
     width: 420,
     height: 258,
     color: anchorTheme.colors.cobalt,
-    title: "Build the product story",
+    title: "梳理注册流失问题",
     source: "Codex",
     status: "RUNNING",
     progress: 0.78,
@@ -32,7 +32,7 @@ const pageCards = [
     width: 420,
     height: 258,
     color: anchorTheme.colors.violet,
-    title: "Review visual system",
+    title: "确认注册改版方案",
     source: "Claude",
     status: "NEEDS DECISION",
     progress: 0.52,
@@ -43,7 +43,7 @@ const pageCards = [
     width: 420,
     height: 258,
     color: anchorTheme.colors.coral,
-    title: "Prepare launch assets",
+    title: "安排注册灰度上线",
     source: "Terminal",
     status: "AWAY / OBSERVED",
     progress: 0.34,
@@ -54,7 +54,7 @@ const pageCards = [
     width: 420,
     height: 258,
     color: anchorTheme.colors.seafoam,
-    title: "Prototype capture",
+    title: "复盘注册灰度效果",
     source: "Demo",
     status: "RUNNING",
     progress: 0.64,
@@ -142,7 +142,7 @@ const PageHeader: React.FC = () => (
               letterSpacing: "-0.04em",
             }}
           >
-            Current session
+            当前工作
           </div>
           <div
             style={{
@@ -153,7 +153,7 @@ const PageHeader: React.FC = () => (
               letterSpacing: "0.08em",
             }}
           >
-            PRODUCT LAUNCH / FOCUSED
+            与 AI 从容共事
           </div>
         </div>
       </div>
@@ -169,7 +169,7 @@ const PageHeader: React.FC = () => (
           letterSpacing: "0.08em",
         }}
       >
-        ANCHORED
+        思路已投锚
       </div>
     </div>
     <div
@@ -193,7 +193,7 @@ const PageHeader: React.FC = () => (
         letterSpacing: "-0.02em",
       }}
     >
-      Live processes
+      任务进程库
     </div>
     <div
       style={{
@@ -205,7 +205,7 @@ const PageHeader: React.FC = () => (
         fontSize: 13,
       }}
     >
-      4 ACTIVE · 1 NEEDS YOU
+      4 项工作 · 1 项待判断
     </div>
   </>
 );
@@ -214,9 +214,10 @@ type PageCardProps = {
   readonly card: (typeof pageCards)[number];
   readonly hero?: boolean;
   readonly frame: number;
+  readonly capturedSrc?: string;
 };
 
-const PageCard: React.FC<PageCardProps> = ({ card, hero = false, frame }) => {
+const PageCard: React.FC<PageCardProps> = ({ card, hero = false, frame, capturedSrc }) => {
   const isDecision = card.status === "NEEDS DECISION";
   const heroRise = hero
     ? interpolate(frame, [66, 77], [0, 1], {
@@ -267,7 +268,7 @@ const PageCard: React.FC<PageCardProps> = ({ card, hero = false, frame }) => {
         top: card.y,
         width: card.width,
         height: card.height,
-        padding: 24,
+        padding: capturedSrc ? 0 : 24,
         borderRadius: CARD_RADIUS,
         overflow: "visible",
         border: `1px solid ${pageAccent}${hero ? "AA" : "40"}`,
@@ -282,6 +283,9 @@ const PageCard: React.FC<PageCardProps> = ({ card, hero = false, frame }) => {
         zIndex: hero ? 8 : 2,
       }}
     >
+      {capturedSrc ? (
+        <Img src={staticFile(capturedSrc)} style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: CARD_RADIUS }} />
+      ) : (<>
       <div style={{ display: "flex", alignItems: "flex-start", gap: 15 }}>
         <div
           style={{
@@ -341,8 +345,8 @@ const PageCard: React.FC<PageCardProps> = ({ card, hero = false, frame }) => {
             }}
           >
             {hero
-              ? "A choice is waiting for a human."
-              : `${card.source} is moving the thread forward.`}
+              ? "这次先上线哪版注册页？"
+              : "目标与进展，留在同一处。"}
           </div>
         </div>
       </div>
@@ -401,10 +405,11 @@ const PageCard: React.FC<PageCardProps> = ({ card, hero = false, frame }) => {
               letterSpacing: "0.06em",
             }}
           >
-            OPEN DECISION
+            打开待决策事项
           </div>
         </div>
       )}
+      </>)}
       {beamOn && hero && lift > 0.35 && (
         <svg
           aria-hidden="true"
@@ -455,7 +460,12 @@ const PageCard: React.FC<PageCardProps> = ({ card, hero = false, frame }) => {
   );
 };
 
-const AnchorHeroPage: React.FC<{ readonly frame: number }> = ({ frame }) => {
+export type HeroCapture = {
+  readonly headerSrc: string;
+  readonly cardSources: readonly string[];
+};
+
+const AnchorHeroPage: React.FC<{ readonly frame: number; readonly capture?: HeroCapture }> = ({ frame, capture }) => {
   return (
     <div
       style={{
@@ -472,7 +482,7 @@ const AnchorHeroPage: React.FC<{ readonly frame: number }> = ({ frame }) => {
         boxShadow: "0 36px 100px rgba(0,0,0,0.28)",
       }}
     >
-      <PageHeader />
+      {capture ? <Img src={staticFile(capture.headerSrc)} style={{ position: "absolute", left: 144, top: 124, width: 1632, height: 230, objectFit: "contain" }} /> : <PageHeader />}
       <div
         style={{
           position: "absolute",
@@ -489,6 +499,7 @@ const AnchorHeroPage: React.FC<{ readonly frame: number }> = ({ frame }) => {
           card={card}
           hero={index === 1}
           frame={frame}
+          capturedSrc={capture?.cardSources[index]}
         />
       ))}
       <div
@@ -502,7 +513,7 @@ const AnchorHeroPage: React.FC<{ readonly frame: number }> = ({ frame }) => {
           letterSpacing: "0.08em",
         }}
       >
-        LAST OBSERVED JUST NOW
+        当前进展，随时可见
       </div>
       <div
         style={{
@@ -515,13 +526,13 @@ const AnchorHeroPage: React.FC<{ readonly frame: number }> = ({ frame }) => {
           letterSpacing: "0.08em",
         }}
       >
-        SESSION / 04 PROCESSES / LOCAL
+        目标 / 进展 / 判断 / 返航
       </div>
     </div>
   );
 };
 
-export const HeroCardScene: React.FC = () => {
+export const HeroCardScene: React.FC<{ readonly capture?: HeroCapture }> = ({ capture }) => {
   const frame = useCurrentFrame();
   const spotX = interpolate(
     frame,
@@ -579,7 +590,7 @@ export const HeroCardScene: React.FC = () => {
             }),
           }}
         >
-          <AnchorHeroPage frame={frame} />
+          <AnchorHeroPage frame={frame} capture={capture} />
         </PageCam>
         <AbsoluteFill
           style={{
@@ -611,7 +622,7 @@ export const HeroCardScene: React.FC = () => {
           }}
         >
           <AnchorGlyph size={44} color={anchorTheme.colors.sky} delay={0} />
-          <span>ONE CLEAR DECISION</span>
+          <span>把注意力，留给重要的决定。</span>
         </div>
       </AbsoluteFill>
     </SceneFrame>

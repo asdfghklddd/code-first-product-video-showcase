@@ -1,4 +1,4 @@
-import { Img, staticFile } from "remotion";
+import { Img, OffthreadVideo, staticFile } from "remotion";
 import { anchorTheme } from "../config/anchorTheme";
 
 type AnchorDashboardMockProps = {
@@ -34,6 +34,9 @@ export const AnchorDashboardMock: React.FC<AnchorDashboardMockProps> = ({
   compact = false,
 }) => {
   if (recordingSrc) {
+    if (/\.(mp4|mov|webm)$/i.test(recordingSrc)) {
+      return <OffthreadVideo src={staticFile(recordingSrc)} muted style={{ width: "100%", height: "100%", objectFit: "cover" }} />;
+    }
     return (
       <Img
         src={staticFile(recordingSrc)}

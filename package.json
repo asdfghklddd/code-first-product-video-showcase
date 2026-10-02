@@ -9,8 +9,21 @@
     "build": "remotion bundle",
     "lint": "eslint src && tsc --noEmit",
     "test": "node --test tests/*.test.mjs",
-    "render:poster": "remotion still AnchorPromo-Poster out/poster.png --frame=75",
-    "render:video": "remotion render AnchorPromo out/anchor-promo.mp4"
+    "render:poster": "remotion still AnchorPromo out/poster.png --frame=75",
+    "render:video": "remotion render AnchorPromo out/anchor-promo.mp4",
+    "render:current": "remotion render AnchorPromo-OriginalMotion-20260930 out/anchor-promo-20260930-original-motion.mp4 --codec=h264 --crf=18",
+    "render:current:poster": "remotion still AnchorPromo-OriginalMotion-20260930 out/anchor-promo-20260930-original-motion-poster.png --frame=75",
+    "render:current:delivery": "node scripts/render-current.mjs",
+    "render:motion:delivery": "node scripts/render-motion.mjs && node scripts/assemble-motion.mjs",
+    "render:brand:delivery": "node scripts/render-brand.mjs && node scripts/assemble-brand.mjs",
+    "render:hero:delivery": "node scripts/encode-heroes.mjs && node scripts/render-hero-rebuild.mjs && node scripts/assemble-hero-rebuild.mjs",
+    "render:value": "node studies/value-summary/render.mjs",
+    "verify:value": "node studies/value-summary/finish.mjs",
+    "render:ending:ae": "node studies/ending-ae/render.mjs",
+    "render:ending:3d": "node studies/ending-3d/render.mjs",
+    "prepare:ending:ocean": "node studies/ending-ocean/prepare.mjs",
+    "render:ending:ocean": "node studies/ending-ocean/render.mjs",
+    "check:assets": "node scripts/check-assets.mjs"
   },
   "dependencies": {
     "@remotion/cli": "4.0.506",
@@ -26,5 +39,10 @@
     "eslint": "9.39.5",
     "typescript": "5.9.3"
   },
-  "sideEffects": ["*.css"]
+  "sideEffects": [
+    "*.css"
+  ],
+  "workspaces": [
+    "studies/value-summary"
+  ]
 }
