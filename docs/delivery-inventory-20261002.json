@@ -18,7 +18,8 @@
       "fps": "30/1",
       "durationSeconds": 20.0,
       "declaredFrames": 600,
-      "hasAudio": false
+      "hasAudio": false,
+      "retainedFile": "Anchor-promo-20260930-original-motion-silent.mp4"
     },
     {
       "file": "Anchor-promo-20260930-real-capture-silent.mp4",
@@ -34,7 +35,8 @@
       "fps": "30/1",
       "durationSeconds": 20.0,
       "declaredFrames": 600,
-      "hasAudio": false
+      "hasAudio": false,
+      "retainedFile": "Anchor-promo-20260930-real-capture-silent.mp4"
     },
     {
       "file": "Anchor-promo-20260930-silent.mp4",
@@ -50,7 +52,8 @@
       "fps": "30/1",
       "durationSeconds": 30.0,
       "declaredFrames": 900,
-      "hasAudio": false
+      "hasAudio": false,
+      "retainedFile": "Anchor-promo-20260930-silent.mp4"
     },
     {
       "file": "MotionOptions/Anchor-opening-A-6s-silent.mp4",
@@ -66,7 +69,8 @@
       "fps": "60/1",
       "durationSeconds": 6.0,
       "declaredFrames": 360,
-      "hasAudio": false
+      "hasAudio": false,
+      "retainedFile": "MotionOptions/Anchor-opening-A-6s-silent.mp4"
     },
     {
       "file": "MotionOptions/Anchor-opening-ABC-comparison-silent.mp4",
@@ -82,7 +86,8 @@
       "fps": "60/1",
       "durationSeconds": 28.5,
       "declaredFrames": 1710,
-      "hasAudio": false
+      "hasAudio": false,
+      "retainedFile": "MotionOptions/Anchor-opening-ABC-comparison-silent.mp4"
     },
     {
       "file": "MotionOptions/Anchor-opening-B-8s-silent.mp4",
@@ -98,7 +103,8 @@
       "fps": "60/1",
       "durationSeconds": 8.0,
       "declaredFrames": 480,
-      "hasAudio": false
+      "hasAudio": false,
+      "retainedFile": "MotionOptions/Anchor-opening-B-8s-silent.mp4"
     },
     {
       "file": "MotionOptions/Anchor-opening-C-10s-silent.mp4",
@@ -114,7 +120,8 @@
       "fps": "60/1",
       "durationSeconds": 10.0,
       "declaredFrames": 600,
-      "hasAudio": false
+      "hasAudio": false,
+      "retainedFile": "MotionOptions/Anchor-opening-C-10s-silent.mp4"
     },
     {
       "file": "MotionOptions/Anchor-promo-motion-v2-26s-silent.mp4",
@@ -130,7 +137,8 @@
       "fps": "60/1",
       "durationSeconds": 26.0,
       "declaredFrames": 1560,
-      "hasAudio": false
+      "hasAudio": false,
+      "retainedFile": "MotionOptions/Anchor-promo-motion-v2-26s-silent.mp4"
     },
     {
       "file": "BrandIntros-20261001/Anchor-A-20s-silent.mp4",
@@ -145,7 +153,8 @@
       "fps": "60/1",
       "durationSeconds": 20.0,
       "declaredFrames": 1200,
-      "hasAudio": false
+      "hasAudio": false,
+      "retainedFile": "BrandIntros-20261001/Anchor-A-20s-silent.mp4"
     },
     {
       "file": "BrandIntros-20261001/Anchor-ABCD-80s-comparison.mp4",
@@ -160,7 +169,8 @@
       "fps": "60/1",
       "durationSeconds": 80.0,
       "declaredFrames": 4800,
-      "hasAudio": false
+      "hasAudio": false,
+      "retainedFile": "BrandIntros-20261001/Anchor-ABCD-80s-comparison.mp4"
     },
     {
       "file": "BrandIntros-20261001/Anchor-B-20s-silent.mp4",
@@ -175,7 +185,8 @@
       "fps": "60/1",
       "durationSeconds": 20.0,
       "declaredFrames": 1200,
-      "hasAudio": false
+      "hasAudio": false,
+      "retainedFile": "BrandIntros-20261001/Anchor-B-20s-silent.mp4"
     },
     {
       "file": "BrandIntros-20261001/Anchor-C-20s-silent.mp4",
@@ -190,7 +201,8 @@
       "fps": "60/1",
       "durationSeconds": 20.0,
       "declaredFrames": 1200,
-      "hasAudio": false
+      "hasAudio": false,
+      "retainedFile": "BrandIntros-20261001/Anchor-C-20s-silent.mp4"
     },
     {
       "file": "BrandIntros-20261001/Anchor-D-20s-silent.mp4",
@@ -205,7 +217,8 @@
       "fps": "60/1",
       "durationSeconds": 20.0,
       "declaredFrames": 1200,
-      "hasAudio": false
+      "hasAudio": false,
+      "retainedFile": "BrandIntros-20261001/Anchor-D-20s-silent.mp4"
     },
     {
       "file": "HeroRebuild-20261001/Anchor-A-20s-hero-silent.mp4",
@@ -221,7 +234,8 @@
       "fps": "60/1",
       "durationSeconds": 20.0,
       "declaredFrames": 1200,
-      "hasAudio": false
+      "hasAudio": false,
+      "retainedFile": "HeroRebuild-20261001/Anchor-A-20s-hero-silent.mp4"
     },
     {
       "file": "HeroRebuild-20261001/Anchor-ABCD-80s-hero-comparison.mp4",
@@ -237,7 +251,8 @@
       "fps": "60/1",
       "durationSeconds": 80.0,
       "declaredFrames": 4800,
-      "hasAudio": false
+      "hasAudio": false,
+      "retainedFile": "HeroRebuild-20261001/Anchor-ABCD-80s-hero-comparison.mp4"
     },
     {
       "file": "HeroRebuild-20261001/Anchor-B-20s-hero-silent.mp4",
@@ -253,7 +268,8 @@
       "fps": "60/1",
       "durationSeconds": 20.0,
       "declaredFrames": 1200,
-      "hasAudio": false
+      "hasAudio": false,
+      "retainedFile": "HeroRebuild-20261001/Anchor-B-20s-hero-silent.mp4"
     },
     {
       "file": "HeroRebuild-20261001/Anchor-C-20s-hero-silent.mp4",
@@ -269,7 +285,8 @@
       "fps": "60/1",
       "durationSeconds": 20.0,
       "declaredFrames": 1200,
-      "hasAudio": false
+      "hasAudio": false,
+      "retainedFile": "HeroRebuild-20261001/Anchor-C-20s-hero-silent.mp4"
     },
     {
       "file": "HeroRebuild-20261001/Anchor-D-20s-hero-silent.mp4",
@@ -285,7 +302,8 @@
       "fps": "60/1",
       "durationSeconds": 20.0,
       "declaredFrames": 1200,
-      "hasAudio": false
+      "hasAudio": false,
+      "retainedFile": "HeroRebuild-20261001/Anchor-D-20s-hero-silent.mp4"
     },
     {
       "file": "HeroRebuild-20261001-v2/01-方案A-四卡片与分层图标.mp4",
@@ -300,7 +318,8 @@
       "fps": "60/1",
       "durationSeconds": 20.0,
       "declaredFrames": 1200,
-      "hasAudio": false
+      "hasAudio": false,
+      "retainedFile": "HeroRebuild-20261001/Anchor-A-20s-hero-silent.mp4"
     },
     {
       "file": "HeroRebuild-20261001-v2/02-方案B-文字穿梭与微距拉远.mp4",
@@ -315,7 +334,8 @@
       "fps": "60/1",
       "durationSeconds": 20.0,
       "declaredFrames": 1200,
-      "hasAudio": false
+      "hasAudio": false,
+      "retainedFile": "HeroRebuild-20261001/Anchor-B-20s-hero-silent.mp4"
     },
     {
       "file": "HeroRebuild-20261001-v2/03-方案C-深色3D环绕镜头.mp4",
@@ -330,7 +350,8 @@
       "fps": "60/1",
       "durationSeconds": 20.0,
       "declaredFrames": 1200,
-      "hasAudio": false
+      "hasAudio": false,
+      "retainedFile": "HeroRebuild-20261001/Anchor-C-20s-hero-silent.mp4"
     },
     {
       "file": "HeroRebuild-20261001-v2/04-方案D-参考转场与三列构图.mp4",
@@ -345,7 +366,8 @@
       "fps": "60/1",
       "durationSeconds": 20.0,
       "declaredFrames": 1200,
-      "hasAudio": false
+      "hasAudio": false,
+      "retainedFile": "HeroRebuild-20261001/Anchor-D-20s-hero-silent.mp4"
     },
     {
       "file": "HeroRebuild-20261001-v2/四方案连看-修订版.mp4",
@@ -360,7 +382,8 @@
       "fps": "60/1",
       "durationSeconds": 80.0,
       "declaredFrames": 4800,
-      "hasAudio": false
+      "hasAudio": false,
+      "retainedFile": "HeroRebuild-20261001/Anchor-ABCD-80s-hero-comparison.mp4"
     },
     {
       "file": "Ending3D-20261001/Anchor-ending-3D-study-12s-silent.mp4",
@@ -375,7 +398,8 @@
       "fps": "30/1",
       "durationSeconds": 12.0,
       "declaredFrames": 360,
-      "hasAudio": false
+      "hasAudio": false,
+      "retainedFile": "Ending3D-20261001/Anchor-ending-3D-study-12s-silent.mp4"
     },
     {
       "file": "EndingAE-20261001/Anchor-ending-AE-light-14s-silent.mp4",
@@ -390,7 +414,8 @@
       "fps": "60/1",
       "durationSeconds": 14.0,
       "declaredFrames": 840,
-      "hasAudio": false
+      "hasAudio": false,
+      "retainedFile": "EndingAE-20261001/Anchor-ending-AE-light-14s-silent.mp4"
     },
     {
       "file": "EndingAE-20261001/Original-vs-new-ending-12s.mp4",
@@ -405,7 +430,8 @@
       "fps": "60/1",
       "durationSeconds": 12.0,
       "declaredFrames": 720,
-      "hasAudio": false
+      "hasAudio": false,
+      "retainedFile": "EndingAE-20261001/Original-vs-new-ending-12s.mp4"
     },
     {
       "file": "EndingOcean-20261001/Anchor-cast-into-ocean-6s-silent.mp4",
@@ -420,7 +446,8 @@
       "fps": "30/1",
       "durationSeconds": 6.0,
       "declaredFrames": 180,
-      "hasAudio": false
+      "hasAudio": false,
+      "retainedFile": "EndingOcean-20261001/Anchor-cast-into-ocean-6s-silent.mp4"
     },
     {
       "file": "EndingOcean-20261001/Anchor-ocean-and-3D-ending-20s-silent.mp4",
@@ -435,7 +462,8 @@
       "fps": "30/1",
       "durationSeconds": 20.0,
       "declaredFrames": 600,
-      "hasAudio": false
+      "hasAudio": false,
+      "retainedFile": "EndingOcean-20261001/Anchor-ocean-and-3D-ending-20s-silent.mp4"
     },
     {
       "file": "ValueSummary-20261002/Anchor-Value-A-Continuous-Thread-60fps.mp4",
@@ -450,7 +478,8 @@
       "fps": "60/1",
       "durationSeconds": 13.883333,
       "declaredFrames": 833,
-      "hasAudio": false
+      "hasAudio": false,
+      "retainedFile": "ValueSummary-20261002/Anchor-Value-A-Continuous-Thread-60fps.mp4"
     },
     {
       "file": "ValueSummary-20261002/Anchor-Value-B-Focus-Lens-60fps.mp4",
@@ -465,7 +494,8 @@
       "fps": "60/1",
       "durationSeconds": 13.883333,
       "declaredFrames": 833,
-      "hasAudio": false
+      "hasAudio": false,
+      "retainedFile": "ValueSummary-20261002/Anchor-Value-B-Focus-Lens-60fps.mp4"
     },
     {
       "file": "ValueSummary-20261002/Anchor-Value-C-Resume-Bookmark-60fps.mp4",
@@ -480,7 +510,8 @@
       "fps": "60/1",
       "durationSeconds": 13.883333,
       "declaredFrames": 833,
-      "hasAudio": false
+      "hasAudio": false,
+      "retainedFile": "ValueSummary-20261002/Anchor-Value-C-Resume-Bookmark-60fps.mp4"
     },
     {
       "file": "ValueSummary-Flat-20261002/Anchor-Value-A-Flat-Journey-60fps.mp4",
@@ -495,7 +526,8 @@
       "fps": "60/1",
       "durationSeconds": 13.883333,
       "declaredFrames": 833,
-      "hasAudio": false
+      "hasAudio": false,
+      "retainedFile": "ValueSummary-Flat-20261002/Anchor-Value-A-Flat-Journey-60fps.mp4"
     },
     {
       "file": "ValueSummary-Flat-20261002/Anchor-Value-B-Shared-Frame-60fps.mp4",
@@ -510,7 +542,8 @@
       "fps": "60/1",
       "durationSeconds": 13.883333,
       "declaredFrames": 833,
-      "hasAudio": false
+      "hasAudio": false,
+      "retainedFile": "ValueSummary-Flat-20261002/Anchor-Value-B-Shared-Frame-60fps.mp4"
     },
     {
       "file": "ValueSummary-Flat-20261002/Anchor-Value-C-Slice-Flow-60fps.mp4",
@@ -525,7 +558,10 @@
       "fps": "60/1",
       "durationSeconds": 13.883333,
       "declaredFrames": 833,
-      "hasAudio": false
+      "hasAudio": false,
+      "retainedFile": "ValueSummary-Flat-20261002/Anchor-Value-C-Slice-Flow-60fps.mp4"
     }
-  ]
+  ],
+  "cleanupOn": "2026-10-02",
+  "cleanupNote": "保留历史导出文件名与哈希；retainedFile 指向清理后实际保留的同内容成片。原生 App、真实输入、Blender 工程与提交证据另行保留。"
 }
