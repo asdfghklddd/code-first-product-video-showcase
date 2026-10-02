@@ -1,0 +1,531 @@
+{
+  "inspectedOn": "2026-10-02",
+  "sourceCommitAtInspection": "f79a5b243dd623a2259ee4f88a4b81e26c3d47f2",
+  "scope": "Deliverables 中十组顶层 MP4；不含原始录屏、嵌套帧缓存、Build 提交材料。只重新探测元数据与文件哈希，未在此轮重新渲染或逐帧验收。",
+  "sourceMapping": "sourceFamily 为当前生成代码家族，不保证当前代码可逐字节复现历史成片；旧版本缺少独立源码快照。",
+  "exports": [
+    {
+      "file": "Anchor-promo-20260930-original-motion-silent.mp4",
+      "sourceFamily": [
+        "src/CurrentPromo.tsx",
+        "src/OriginalMotionPromo.tsx",
+        "scripts/render-current.mjs"
+      ],
+      "bytes": 3687960,
+      "sha256": "b12d9e1d7dab9c2e69ac05654ce2d53d337a53f6c4f9d0fde468decb2b03451b",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1",
+      "durationSeconds": 20.0,
+      "declaredFrames": 600,
+      "hasAudio": false
+    },
+    {
+      "file": "Anchor-promo-20260930-real-capture-silent.mp4",
+      "sourceFamily": [
+        "src/CurrentPromo.tsx",
+        "src/OriginalMotionPromo.tsx",
+        "scripts/render-current.mjs"
+      ],
+      "bytes": 3417481,
+      "sha256": "d7fb94e90fb7788664d0a3a6efeb9dfa4fdf3c068ac4ca529d230c8a412c51c0",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1",
+      "durationSeconds": 20.0,
+      "declaredFrames": 600,
+      "hasAudio": false
+    },
+    {
+      "file": "Anchor-promo-20260930-silent.mp4",
+      "sourceFamily": [
+        "src/CurrentPromo.tsx",
+        "src/OriginalMotionPromo.tsx",
+        "scripts/render-current.mjs"
+      ],
+      "bytes": 6195021,
+      "sha256": "6b50681e602575599c65bb816ad7762c7da8759d6012420b58160cbb65e677eb",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1",
+      "durationSeconds": 30.0,
+      "declaredFrames": 900,
+      "hasAudio": false
+    },
+    {
+      "file": "MotionOptions/Anchor-opening-A-6s-silent.mp4",
+      "sourceFamily": [
+        "src/PremiumMotion.tsx",
+        "scripts/render-motion.mjs",
+        "scripts/assemble-motion.mjs"
+      ],
+      "bytes": 2130080,
+      "sha256": "df7e6ff6624b591275ee57e2e7ea075eb3e2ce3a9c781e20a781524df8c55b24",
+      "width": 1920,
+      "height": 1080,
+      "fps": "60/1",
+      "durationSeconds": 6.0,
+      "declaredFrames": 360,
+      "hasAudio": false
+    },
+    {
+      "file": "MotionOptions/Anchor-opening-ABC-comparison-silent.mp4",
+      "sourceFamily": [
+        "src/PremiumMotion.tsx",
+        "scripts/render-motion.mjs",
+        "scripts/assemble-motion.mjs"
+      ],
+      "bytes": 8586698,
+      "sha256": "d4cb82f9283a25a5048cfce282e1686ecc3a6fe64eed81c5b0d4152babe4f325",
+      "width": 1920,
+      "height": 1080,
+      "fps": "60/1",
+      "durationSeconds": 28.5,
+      "declaredFrames": 1710,
+      "hasAudio": false
+    },
+    {
+      "file": "MotionOptions/Anchor-opening-B-8s-silent.mp4",
+      "sourceFamily": [
+        "src/PremiumMotion.tsx",
+        "scripts/render-motion.mjs",
+        "scripts/assemble-motion.mjs"
+      ],
+      "bytes": 5051910,
+      "sha256": "3473bb18b15243c3254c516323091e7e721d932178b3a89860e90f0027e45844",
+      "width": 1920,
+      "height": 1080,
+      "fps": "60/1",
+      "durationSeconds": 8.0,
+      "declaredFrames": 480,
+      "hasAudio": false
+    },
+    {
+      "file": "MotionOptions/Anchor-opening-C-10s-silent.mp4",
+      "sourceFamily": [
+        "src/PremiumMotion.tsx",
+        "scripts/render-motion.mjs",
+        "scripts/assemble-motion.mjs"
+      ],
+      "bytes": 3164198,
+      "sha256": "a433d3439f4e5a46d61ad84ba281194e54ec13b72ba9343555693e6c951a6ab7",
+      "width": 1920,
+      "height": 1080,
+      "fps": "60/1",
+      "durationSeconds": 10.0,
+      "declaredFrames": 600,
+      "hasAudio": false
+    },
+    {
+      "file": "MotionOptions/Anchor-promo-motion-v2-26s-silent.mp4",
+      "sourceFamily": [
+        "src/PremiumMotion.tsx",
+        "scripts/render-motion.mjs",
+        "scripts/assemble-motion.mjs"
+      ],
+      "bytes": 8930256,
+      "sha256": "1eb60d428b7dc657beb323a67e97b18870f67f732fa099a1531e7285c5e30b98",
+      "width": 1920,
+      "height": 1080,
+      "fps": "60/1",
+      "durationSeconds": 26.0,
+      "declaredFrames": 1560,
+      "hasAudio": false
+    },
+    {
+      "file": "BrandIntros-20261001/Anchor-A-20s-silent.mp4",
+      "sourceFamily": [
+        "src/BrandIntros.tsx",
+        "scripts/render-brand.mjs"
+      ],
+      "bytes": 2765890,
+      "sha256": "1e1d37592cba6078baa3d307fa97703e9e55df6ac2d9c8ec3ec75b205267c942",
+      "width": 1920,
+      "height": 1080,
+      "fps": "60/1",
+      "durationSeconds": 20.0,
+      "declaredFrames": 1200,
+      "hasAudio": false
+    },
+    {
+      "file": "BrandIntros-20261001/Anchor-ABCD-80s-comparison.mp4",
+      "sourceFamily": [
+        "src/BrandIntros.tsx",
+        "scripts/render-brand.mjs"
+      ],
+      "bytes": 13895603,
+      "sha256": "91582319c3ac97aad0e240ee948a374ab1153d6598159f901cda57e87e2c9716",
+      "width": 1920,
+      "height": 1080,
+      "fps": "60/1",
+      "durationSeconds": 80.0,
+      "declaredFrames": 4800,
+      "hasAudio": false
+    },
+    {
+      "file": "BrandIntros-20261001/Anchor-B-20s-silent.mp4",
+      "sourceFamily": [
+        "src/BrandIntros.tsx",
+        "scripts/render-brand.mjs"
+      ],
+      "bytes": 3411279,
+      "sha256": "9100d64f6590392ee472229824c6df404ffe7ee608a2d1f5cf984a3db6e07eba",
+      "width": 1920,
+      "height": 1080,
+      "fps": "60/1",
+      "durationSeconds": 20.0,
+      "declaredFrames": 1200,
+      "hasAudio": false
+    },
+    {
+      "file": "BrandIntros-20261001/Anchor-C-20s-silent.mp4",
+      "sourceFamily": [
+        "src/BrandIntros.tsx",
+        "scripts/render-brand.mjs"
+      ],
+      "bytes": 5492241,
+      "sha256": "6f5d4c1989d04bfcc60f0011bec25538b86411e18a36ffc55efdad2df527ece7",
+      "width": 1920,
+      "height": 1080,
+      "fps": "60/1",
+      "durationSeconds": 20.0,
+      "declaredFrames": 1200,
+      "hasAudio": false
+    },
+    {
+      "file": "BrandIntros-20261001/Anchor-D-20s-silent.mp4",
+      "sourceFamily": [
+        "src/BrandIntros.tsx",
+        "scripts/render-brand.mjs"
+      ],
+      "bytes": 2229374,
+      "sha256": "6efe8b647e823ef5ff0342cc9d1813e1918826427979437ba5a8d4a273cbb86a",
+      "width": 1920,
+      "height": 1080,
+      "fps": "60/1",
+      "durationSeconds": 20.0,
+      "declaredFrames": 1200,
+      "hasAudio": false
+    },
+    {
+      "file": "HeroRebuild-20261001/Anchor-A-20s-hero-silent.mp4",
+      "sourceFamily": [
+        "src/HeroRebuild.tsx",
+        "scripts/blender-hero.py",
+        "scripts/render-hero-rebuild.mjs"
+      ],
+      "bytes": 10854752,
+      "sha256": "fd80aa37ddbd35e9291fe728fe64062cda0ee1721f72c616acdd4b88069e9f2d",
+      "width": 1920,
+      "height": 1080,
+      "fps": "60/1",
+      "durationSeconds": 20.0,
+      "declaredFrames": 1200,
+      "hasAudio": false
+    },
+    {
+      "file": "HeroRebuild-20261001/Anchor-ABCD-80s-hero-comparison.mp4",
+      "sourceFamily": [
+        "src/HeroRebuild.tsx",
+        "scripts/blender-hero.py",
+        "scripts/render-hero-rebuild.mjs"
+      ],
+      "bytes": 47683437,
+      "sha256": "58c79507bc4a364673bc46e04a51ba527b146913bf668b93a1f38226f2151766",
+      "width": 1920,
+      "height": 1080,
+      "fps": "60/1",
+      "durationSeconds": 80.0,
+      "declaredFrames": 4800,
+      "hasAudio": false
+    },
+    {
+      "file": "HeroRebuild-20261001/Anchor-B-20s-hero-silent.mp4",
+      "sourceFamily": [
+        "src/HeroRebuild.tsx",
+        "scripts/blender-hero.py",
+        "scripts/render-hero-rebuild.mjs"
+      ],
+      "bytes": 13194714,
+      "sha256": "e8b9ea00e02040d7fca5a307dce07283c3ab8057249af367201a44a97f8fe95d",
+      "width": 1920,
+      "height": 1080,
+      "fps": "60/1",
+      "durationSeconds": 20.0,
+      "declaredFrames": 1200,
+      "hasAudio": false
+    },
+    {
+      "file": "HeroRebuild-20261001/Anchor-C-20s-hero-silent.mp4",
+      "sourceFamily": [
+        "src/HeroRebuild.tsx",
+        "scripts/blender-hero.py",
+        "scripts/render-hero-rebuild.mjs"
+      ],
+      "bytes": 14604538,
+      "sha256": "ed4059a6cbe59d7859ca230b1981f15cb97db4de55ce8a3d754a697912189847",
+      "width": 1920,
+      "height": 1080,
+      "fps": "60/1",
+      "durationSeconds": 20.0,
+      "declaredFrames": 1200,
+      "hasAudio": false
+    },
+    {
+      "file": "HeroRebuild-20261001/Anchor-D-20s-hero-silent.mp4",
+      "sourceFamily": [
+        "src/HeroRebuild.tsx",
+        "scripts/blender-hero.py",
+        "scripts/render-hero-rebuild.mjs"
+      ],
+      "bytes": 9032622,
+      "sha256": "8a6dc9b2001327550501b990d646aa8ce08dbdc3351e2ac3814965e1b293c6fd",
+      "width": 1920,
+      "height": 1080,
+      "fps": "60/1",
+      "durationSeconds": 20.0,
+      "declaredFrames": 1200,
+      "hasAudio": false
+    },
+    {
+      "file": "HeroRebuild-20261001-v2/01-方案A-四卡片与分层图标.mp4",
+      "sourceFamily": [
+        "src/HeroRebuild.tsx",
+        "scripts/render-hero-rebuild.mjs"
+      ],
+      "bytes": 10854752,
+      "sha256": "fd80aa37ddbd35e9291fe728fe64062cda0ee1721f72c616acdd4b88069e9f2d",
+      "width": 1920,
+      "height": 1080,
+      "fps": "60/1",
+      "durationSeconds": 20.0,
+      "declaredFrames": 1200,
+      "hasAudio": false
+    },
+    {
+      "file": "HeroRebuild-20261001-v2/02-方案B-文字穿梭与微距拉远.mp4",
+      "sourceFamily": [
+        "src/HeroRebuild.tsx",
+        "scripts/render-hero-rebuild.mjs"
+      ],
+      "bytes": 13194714,
+      "sha256": "e8b9ea00e02040d7fca5a307dce07283c3ab8057249af367201a44a97f8fe95d",
+      "width": 1920,
+      "height": 1080,
+      "fps": "60/1",
+      "durationSeconds": 20.0,
+      "declaredFrames": 1200,
+      "hasAudio": false
+    },
+    {
+      "file": "HeroRebuild-20261001-v2/03-方案C-深色3D环绕镜头.mp4",
+      "sourceFamily": [
+        "src/HeroRebuild.tsx",
+        "scripts/render-hero-rebuild.mjs"
+      ],
+      "bytes": 14604538,
+      "sha256": "ed4059a6cbe59d7859ca230b1981f15cb97db4de55ce8a3d754a697912189847",
+      "width": 1920,
+      "height": 1080,
+      "fps": "60/1",
+      "durationSeconds": 20.0,
+      "declaredFrames": 1200,
+      "hasAudio": false
+    },
+    {
+      "file": "HeroRebuild-20261001-v2/04-方案D-参考转场与三列构图.mp4",
+      "sourceFamily": [
+        "src/HeroRebuild.tsx",
+        "scripts/render-hero-rebuild.mjs"
+      ],
+      "bytes": 9032622,
+      "sha256": "8a6dc9b2001327550501b990d646aa8ce08dbdc3351e2ac3814965e1b293c6fd",
+      "width": 1920,
+      "height": 1080,
+      "fps": "60/1",
+      "durationSeconds": 20.0,
+      "declaredFrames": 1200,
+      "hasAudio": false
+    },
+    {
+      "file": "HeroRebuild-20261001-v2/四方案连看-修订版.mp4",
+      "sourceFamily": [
+        "src/HeroRebuild.tsx",
+        "scripts/render-hero-rebuild.mjs"
+      ],
+      "bytes": 47683437,
+      "sha256": "58c79507bc4a364673bc46e04a51ba527b146913bf668b93a1f38226f2151766",
+      "width": 1920,
+      "height": 1080,
+      "fps": "60/1",
+      "durationSeconds": 80.0,
+      "declaredFrames": 4800,
+      "hasAudio": false
+    },
+    {
+      "file": "Ending3D-20261001/Anchor-ending-3D-study-12s-silent.mp4",
+      "sourceFamily": [
+        "studies/ending-3d/scene.py",
+        "studies/ending-3d/Entry.tsx"
+      ],
+      "bytes": 2811489,
+      "sha256": "63f4a628ced8dd11ca5b63a9449980b20312cb74a5858357e82ca76988bf6fdb",
+      "width": 1280,
+      "height": 720,
+      "fps": "30/1",
+      "durationSeconds": 12.0,
+      "declaredFrames": 360,
+      "hasAudio": false
+    },
+    {
+      "file": "EndingAE-20261001/Anchor-ending-AE-light-14s-silent.mp4",
+      "sourceFamily": [
+        "studies/ending-ae/Entry.tsx",
+        "studies/ending-ae/render.mjs"
+      ],
+      "bytes": 7824527,
+      "sha256": "fe463ff10987615d00bef19ce72983b7ab01f7ab2dfd2520e25bd2f0a5084ccd",
+      "width": 1920,
+      "height": 1080,
+      "fps": "60/1",
+      "durationSeconds": 14.0,
+      "declaredFrames": 840,
+      "hasAudio": false
+    },
+    {
+      "file": "EndingAE-20261001/Original-vs-new-ending-12s.mp4",
+      "sourceFamily": [
+        "studies/ending-ae/Entry.tsx",
+        "studies/ending-ae/render.mjs"
+      ],
+      "bytes": 4195225,
+      "sha256": "43eda6fae5fc60e33b3d00dc2c7543913f77159ad7935a0fe9350eb7e52af548",
+      "width": 1920,
+      "height": 1080,
+      "fps": "60/1",
+      "durationSeconds": 12.0,
+      "declaredFrames": 720,
+      "hasAudio": false
+    },
+    {
+      "file": "EndingOcean-20261001/Anchor-cast-into-ocean-6s-silent.mp4",
+      "sourceFamily": [
+        "studies/ending-ocean/scene.py",
+        "studies/ending-ocean/render.mjs"
+      ],
+      "bytes": 2267232,
+      "sha256": "b41c55ea0c8222890fd0b9cc37d1f9bc16542cd42be531fbd7c6ffabfae0c775",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1",
+      "durationSeconds": 6.0,
+      "declaredFrames": 180,
+      "hasAudio": false
+    },
+    {
+      "file": "EndingOcean-20261001/Anchor-ocean-and-3D-ending-20s-silent.mp4",
+      "sourceFamily": [
+        "studies/ending-ocean/scene.py",
+        "studies/ending-ocean/render.mjs"
+      ],
+      "bytes": 7359068,
+      "sha256": "d750e5372887683bd262b1b899c31cce8808680310d45d8b69352c4316319751",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1",
+      "durationSeconds": 20.0,
+      "declaredFrames": 600,
+      "hasAudio": false
+    },
+    {
+      "file": "ValueSummary-20261002/Anchor-Value-A-Continuous-Thread-60fps.mp4",
+      "sourceFamily": [
+        "studies/value-summary/Entry.tsx",
+        "studies/value-summary/Scene.tsx"
+      ],
+      "bytes": 4424681,
+      "sha256": "ac00deaa9bb39a5a90a7c182e44d0a31c5d8b67c07f96175a3e9faf76ce9b694",
+      "width": 1920,
+      "height": 1080,
+      "fps": "60/1",
+      "durationSeconds": 13.883333,
+      "declaredFrames": 833,
+      "hasAudio": false
+    },
+    {
+      "file": "ValueSummary-20261002/Anchor-Value-B-Focus-Lens-60fps.mp4",
+      "sourceFamily": [
+        "studies/value-summary/Entry.tsx",
+        "studies/value-summary/Scene.tsx"
+      ],
+      "bytes": 6143420,
+      "sha256": "270b174cd917fdc02c5d5b353ecf4f159e896adc806d7953a9c4a4608f64726e",
+      "width": 1920,
+      "height": 1080,
+      "fps": "60/1",
+      "durationSeconds": 13.883333,
+      "declaredFrames": 833,
+      "hasAudio": false
+    },
+    {
+      "file": "ValueSummary-20261002/Anchor-Value-C-Resume-Bookmark-60fps.mp4",
+      "sourceFamily": [
+        "studies/value-summary/Entry.tsx",
+        "studies/value-summary/Scene.tsx"
+      ],
+      "bytes": 4388107,
+      "sha256": "5921e0341829320834c6000cefaccf1dd2a4c51f2dbe3242bd8f915453000ba0",
+      "width": 1920,
+      "height": 1080,
+      "fps": "60/1",
+      "durationSeconds": 13.883333,
+      "declaredFrames": 833,
+      "hasAudio": false
+    },
+    {
+      "file": "ValueSummary-Flat-20261002/Anchor-Value-A-Flat-Journey-60fps.mp4",
+      "sourceFamily": [
+        "studies/value-summary/FlatEntry.tsx",
+        "studies/value-summary/render.mjs"
+      ],
+      "bytes": 2947201,
+      "sha256": "b5aee5812f613116730c6e7c0e1b280258101ed9237d52d3f6333258c7fe6477",
+      "width": 1920,
+      "height": 1080,
+      "fps": "60/1",
+      "durationSeconds": 13.883333,
+      "declaredFrames": 833,
+      "hasAudio": false
+    },
+    {
+      "file": "ValueSummary-Flat-20261002/Anchor-Value-B-Shared-Frame-60fps.mp4",
+      "sourceFamily": [
+        "studies/value-summary/FlatEntry.tsx",
+        "studies/value-summary/render.mjs"
+      ],
+      "bytes": 2730921,
+      "sha256": "8edf2ab78063ed85cc077c18fdf1518af9deab1b0c8d2422a69e11ac94735a6b",
+      "width": 1920,
+      "height": 1080,
+      "fps": "60/1",
+      "durationSeconds": 13.883333,
+      "declaredFrames": 833,
+      "hasAudio": false
+    },
+    {
+      "file": "ValueSummary-Flat-20261002/Anchor-Value-C-Slice-Flow-60fps.mp4",
+      "sourceFamily": [
+        "studies/value-summary/FlatEntry.tsx",
+        "studies/value-summary/render.mjs"
+      ],
+      "bytes": 2678099,
+      "sha256": "58d8df06a7a598e144799b9eb342a61107d0ccb7af87e5df3960f4086ba9edf9",
+      "width": 1920,
+      "height": 1080,
+      "fps": "60/1",
+      "durationSeconds": 13.883333,
+      "declaredFrames": 833,
+      "hasAudio": false
+    }
+  ]
+}

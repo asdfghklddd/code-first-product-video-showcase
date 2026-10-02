@@ -28,7 +28,7 @@ test("public source has no private-platform or machine-path references", async (
 test("production scripts and studies contain no personal machine paths", async () => {
   for (const directory of ["scripts", "studies", "docs", "examples"]) {
     const files = await walk(fileURLToPath(new URL(`../${directory}`, import.meta.url)));
-    for (const file of files.filter((path) => /\.(mjs|tsx?|py|md|json)$/.test(path))) {
+    for (const file of files.filter((path) => /\.(mjs|tsx?|py|swift|md|json)$/.test(path))) {
       const content = await readFile(file, "utf8");
       assert.equal(/\/Users\/[^\s/]+\/|C:\\Users\\|wxid_/i.test(content), false, `Personal path found in ${file}`);
     }
